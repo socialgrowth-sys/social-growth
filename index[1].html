@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Growth App – Official Website</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+body{
+  background:#f4f6fb;
+  color:#333;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+/* ========== TOP BAR ========== */
+.topbar{
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:56px;
+  background:#111;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 16px;
+  z-index:1000;
+}
+.topbar h1{
+  font-size:18px;
+  font-weight:600;
+}
+.menu-btn{
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* ========== MENU ========== */
+.menu{
+  position:fixed;
+  top:56px;
+  right:14px;
+  background:#fff;
+  width:220px;
+  border-radius:14px;
+  box-shadow:0 14px 35px rgba(0,0,0,0.2);
+  display:none;
+  z-index:1001;
+  overflow:hidden;
+}
+.menu a{
+  display:block;
+  padding:14px 16px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+.menu a:hover{
+  background:#f1f5f9;
+}
+
+/* ========== HERO ========== */
+.hero{
+  margin-top:56px;
+  background:linear-gradient(135deg,#7c3aed,#2563eb);
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+.hero h2{
+  font-size:34px;
+  margin-bottom:12px;
+}
+.hero p{
+  font-size:16px;
+  opacity:0.95;
+}
+.download-btn{
+  display:inline-block;
+  margin-top:26px;
+  padding:15px 36px;
+  background:#22c55e;
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+  transition:0.3s;
+}
+.download-btn:hover{
+  background:#16a34a;
+  transform:scale(1.04);
+}
+
+/* ========== CONTAINER ========== */
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:46px 20px;
+}
+
+/* ========== CARD ========== */
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:22px;
+  margin-bottom:34px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.08);
+}
+.card h3{
+  font-size:22px;
+  margin-bottom:14px;
+}
+
+/* ========== LIST ========== */
+.card ul{
+  padding-left:20px;
+}
+.card li{
+  margin-bottom:8px;
+}
+
+/* ========== INSTAGRAM ========== */
+.instagram-links a{
+  display:block;
+  margin-bottom:10px;
+  font-weight:600;
+  text-decoration:none;
+}
+.instagram-links a:first-child{ color:#e1306c; }
+.instagram-links a:last-child{ color:#2563eb; }
+
+/* ========== FOOTER ========== */
+footer{
+  background:#111;
+  color:#ccc;
+  text-align:center;
+  padding:26px 12px;
+  font-size:14px;
+}
+footer a{
+  color:#22c55e;
+  text-decoration:none;
+}
+
+/* ========== ANIMATION ========== */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
+}
+.reveal.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ========== RESPONSIVE ========== */
+@media(max-width:768px){
+  .hero{ padding:55px 16px; }
+  .hero h2{ font-size:24px; }
+  .hero p{ font-size:14px; }
+  .download-btn{ width:100%; }
+  .card{ padding:22px; }
+  .card h3{ font-size:18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <h1>Social Growth</h1>
+  <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+</div>
+
+<!-- MENU -->
+<div class="menu" id="menu">
+  <a href="index.html">🏠 Home</a>
+  <a href="guide.html">📲 Installation Guide</a>
+  <a href="privacy.html">🔐 Privacy Policy</a>
+  <a href="contact.html">📞 Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <h2>Social Growth App</h2>
+  <p>Instagram Likes, Reel Views aur Followers badhane ka smart & responsible platform 🚀</p>
+
+  <a class="download-btn"
+     href="https://www.mediafire.com/file/kbuugp2gjwhcgsc/Social_Growth1_%25281%2529.apk/file">
+     ⬇️ Download App
+  </a>
+</section>
+
+<div class="container">
+
+<!-- ABOUT -->
+<div class="card reveal">
+<h3>🔥 ABOUT SOCIAL GROWTH</h3>
+
+<p>🌐 <b>Social Growth</b> ek modern aur user-friendly platform hai jo creators, small businesses aur individuals ko unki social media presence better banane me help karta hai. Aaj ke digital era me visibility, engagement aur reach bahut important factors hain, aur Social Growth isi need ko ek simple, structured aur professional approach ke saath address karta hai.</p>
+
+<p>✨ Is platform ka main focus hai <b>clarity aur transparency</b>. Services clearly defined hoti hain, process straightforward hota hai aur user ko har step par clear information milti hai. Interface clean aur navigation simple rakha gaya hai taaki beginners bhi bina kisi technical confusion ke app ko comfortably use kar saken.</p>
+
+<p>🔐 <b>User safety aur privacy</b> Social Growth ke core principles me se ek hai. App kisi bhi user ka social media password, login credentials ya personal data collect nahi karta. Instagram, Facebook ya kisi bhi social platform ka direct access kabhi bhi require nahi hota, jisse users apne account ke full control me rehte hain.</p>
+
+<p>⚖️ Social Growth responsible usage ko strongly promote karta hai. Platform natural activity patterns ko dhyaan me rakh kar design kiya gaya hai. Har social media platform ke apne algorithms aur policies hoti hain, isliye Social Growth kabhi bhi unrealistic ya 100% guaranteed results ka false claim nahi karta. Honest communication hi hamari pehchan hai.</p>
+
+<p>🎯 Ye app un logon ke liye ideal hai jo apni social media activity ko planned aur organized tareeke se improve karna chahte hain. Chahe aap content creator ho, small business owner ho ya individual user, Social Growth aapko ek structured support system provide karta hai.</p>
+
+<p>🌟 Overall, Social Growth ek <b>independent, trust-based aur privacy-focused platform</b> hai jo simple tools aur clear processes ke through users ko empower karta hai. Agar aap ek clean, professional aur user-centric experience chahte hain, to Social Growth aapke liye ek reliable option ho sakta hai.</p>
+</div>
+
+<!-- FEATURES -->
+<div class="card reveal">
+<h3>🚀 App Features</h3>
+<ul>
+  <li>Instagram Likes Boost ❤️</li>
+  <li>Reel Views Increase 🎥</li>
+  <li>Followers Growth Support 📈</li>
+  <li>No Login Required 🔒</li>
+  <li>Simple & Fast Interface ⚡</li>
+  <li>Privacy-Focused System 🛡️</li>
+</ul>
+</div>
+
+<!-- INSTAGRAM -->
+<div class="card reveal">
+<h3>📸 Follow on Instagram</h3>
+<div class="instagram-links">
+  <a href="https://www.instagram.com/social_growth.official" target="_blank">
+    👉 @social_growth.official (Official)
+  </a>
+  <a href="https://www.instagram.com/er_broken_x_ravi" target="_blank">
+    👉 @er_broken_x_ravi (Team)
+  </a>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Social Growth App <br><br>
+📧 hardffm91@gmail.com <br><br>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="contact.html">Contact</a>
+</footer>
+
+<script>
+function toggleMenu(){
+  const menu=document.getElementById("menu");
+  menu.style.display = menu.style.display==="block" ? "none" : "block";
+}
+document.addEventListener("click",function(e){
+  const menu=document.getElementById("menu");
+  const btn=document.querySelector(".menu-btn");
+  if(!menu.contains(e.target) && !btn.contains(e.target)){
+    menu.style.display="none";
+  }
+});
+
+const reveals=document.querySelectorAll(".reveal");
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+},{threshold:0.15});
+reveals.forEach(r=>observer.observe(r));
+</script>
+
+</body>
+</html>
