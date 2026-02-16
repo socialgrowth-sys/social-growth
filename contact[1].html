@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us – Social Growth</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== BASIC ===== */
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    background:#f6f7fb;
+    color:#333;
+    line-height:1.65;
+    overflow-x:hidden;
+}
+
+/* PAGE LOAD */
+.page{
+    animation:fadePage 0.5s ease;
+}
+@keyframes fadePage{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+/* CONTAINER */
+.container{
+    max-width:760px;
+    margin:auto;
+    padding:18px;
+}
+
+/* MAIN CARD */
+.card{
+    background:#ffffff;
+    padding:22px;
+    border-radius:16px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h1{
+    font-size:22px;
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:14px;
+}
+h2{
+    font-size:16.5px;
+    margin:0 0 8px 0;
+    color:#111;
+}
+
+/* TEXT */
+p, li{
+    font-size:14.5px;
+}
+
+/* SECTIONS */
+.section{
+    margin-top:18px;
+    padding:16px;
+    border-radius:14px;
+}
+
+/* COLOURFUL BLOCKS */
+.intro{
+    background:#eef2ff;
+    border-left:5px solid #6366f1;
+}
+.email{
+    background:#f0fdf4;
+    border-left:5px solid #22c55e;
+}
+.instagram{
+    background:#fdf2f8;
+    border-left:5px solid #ec4899;
+}
+.notice{
+    background:#fff7ed;
+    border-left:5px solid #f97316;
+}
+.guidelines{
+    background:#ecfeff;
+    border-left:5px solid #0891b2;
+}
+
+/* LIST */
+ul{
+    padding-left:18px;
+}
+
+/* DIVIDER */
+hr{
+    border:none;
+    height:1px;
+    background:#e5e7eb;
+    margin:22px 0;
+}
+
+/* ===== SIDE SLIDE ANIMATION (CRACK → SETTLE) ===== */
+.reveal{
+    opacity:0;
+    transform:translateX(-40px) skewX(-3deg);
+    transition:all 0.7s cubic-bezier(.22,1,.36,1);
+}
+.reveal.right{
+    transform:translateX(40px) skewX(3deg);
+}
+.reveal.show{
+    opacity:1;
+    transform:translateX(0) skewX(0);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    font-size:13px;
+    margin-top:22px;
+    color:#555;
+}
+</style>
+</head>
+
+<body class="page">
+
+<div class="container">
+<div class="card">
+
+<h1 class="reveal">📞 CONTACT US – SOCIAL GROWTH</h1>
+
+<!-- INTRO -->
+<div class="section intro reveal right">
+<p>
+Thank you for using <b>Social Growth</b>.<br>
+We are always happy to assist you with any questions,
+feedback, or support related to the app.
+</p>
+<p>
+If you are facing any issue or need help,
+please feel free to contact us through the following channels:
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- EMAIL SUPPORT -->
+<div class="section email reveal">
+<h2>📧 Email Support</h2>
+<p>
+<b>hardffm90@gmail.com</b><br>
+<b>hardffm91@gmail.com</b>
+</p>
+<p>
+We usually respond within <b>24–48 hours</b>.
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- INSTAGRAM SUPPORT -->
+<div class="section instagram reveal right">
+<h2>📸 Instagram Support</h2>
+<p>
+<b>@er_broken_x_ravi</b><br>
+<b>@socialgrowth_Official</b>
+</p>
+<p>
+You can send us a direct message regarding
+app-related queries or updates.
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- WHATSAPP NOTICE -->
+<div class="section notice reveal">
+<h2>⚠️ WhatsApp Support Notice</h2>
+<p>
+Currently, we do not provide WhatsApp support.<br><br>
+As a student and independent developer,
+we value personal privacy and maintain
+professional communication through
+<b>email and Instagram only</b>.
+</p>
+<p>
+We appreciate your understanding and respect for privacy.
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- SUPPORT GUIDELINES -->
+<div class="section guidelines reveal right">
+<h2>💡 Support Guidelines</h2>
+<ul>
+<li>Please provide clear details about your issue.</li>
+<li>Mention your app version (if possible).</li>
+<li>Incomplete information may delay response.</li>
+</ul>
+</div>
+
+<div class="footer reveal">
+Thank you for trusting <b>Social Growth</b>.<br>
+Your support helps us improve and grow continuously. 🚀
+</div>
+
+</div>
+</div>
+
+<script>
+const items=document.querySelectorAll(".reveal");
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+},{threshold:0.12});
+items.forEach(i=>obs.observe(i));
+</script>
+
+</body>
+</html>

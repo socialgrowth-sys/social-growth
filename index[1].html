@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Social Growth App – Instagram Growth Tool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ================= BASIC ================= */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* PAGE LOAD ANIMATION */
+.page{
+    animation: pageFade 0.6s ease;
+}
+@keyframes pageFade{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ================= TOP BAR ================= */
+.topbar{
+    background:#111;
+    color:#fff;
+    padding:14px 16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.title{
+    font-size:18px;
+    font-weight:bold;
+}
+.menu-btn{
+    font-size:24px;
+    cursor:pointer;
+    user-select:none;
+}
+
+/* ================= THREE DOT MENU ================= */
+.menu{
+    display:none;
+    position:absolute;
+    right:12px;
+    top:55px;
+    background:#fff;
+    width:190px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+    overflow:hidden;
+    z-index:1000;
+}
+.menu a{
+    display:block;
+    padding:14px;
+    text-decoration:none;
+    color:#333;
+    border-bottom:1px solid #eee;
+    font-size:15px;
+}
+.menu a:hover{
+    background:#f0f0f0;
+}
+
+/* ================= HERO ================= */
+header{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+header h1{
+    margin:0;
+    font-size:36px;
+}
+header p{
+    margin-top:12px;
+    font-size:17px;
+}
+
+/* ================= BUTTON ================= */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 32px;
+    background:#00c853;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:transform 0.3s ease;
+}
+.btn:hover{
+    transform:scale(1.06);
+}
+
+/* ================= CONTENT ================= */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= SCROLL REVEAL ================= */
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.7s ease;
+}
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= INSTAGRAM ================= */
+.insta-box{
+    text-align:center;
+}
+.insta-box a{
+    display:block;
+    margin:12px 0;
+    font-weight:bold;
+    text-decoration:none;
+    color:#E1306C;
+    font-size:16px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#111;
+    color:#ccc;
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+}
+footer a{
+    color:#00e676;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body class="page">
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+    <div class="title">📱 Social Growth</div>
+    <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+</div>
+
+<!-- ================= MENU ================= -->
+<div class="menu" id="menu">
+    <a href="index.html">🏠 Home</a>
+    
+    <a href="guide.html">📲 Install Guide</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="contact.html">📞 Contact</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<header>
+    <h1 class="reveal">Social Growth App</h1>
+    <p class="reveal">
+        Instagram Likes, Reel Views aur Followers badhane ka smart tool
+    </p>
+
+    <a class="btn reveal"
+       href="https://www.mediafire.com/file/kbuugp2gjwhcgsc/Social_Growth1_%25281%2529.apk/file"
+       target="_blank">
+        ⬇ Download App
+    </a>
+</header>
+
+<!-- ================= CONTENT ================= -->
+<div class="container">
+
+    <div class="card reveal">
+        <h2>🔥 Social Growth App Kya Hai?</h2>
+        <p>
+            Social Growth ek Android application hai jisse
+            Instagram users apne post par
+            <b>Likes, Reel Views aur Followers</b>
+            fast aur easily badha sakte hain.
+        </p>
+    </div>
+
+    <div class="card reveal">
+        <h2>🚀 App Features</h2>
+        <ul>
+            <li>Instagram Likes Increase</li>
+            <li>Reel Views Boost</li>
+            <li>Followers Growth</li>
+            <li>Easy & Fast Interface</li>
+            <li>Secure System</li>
+        </ul>
+    </div>
+
+    <div class="card insta-box reveal">
+        <h2>📸 Follow Us on Instagram</h2>
+
+        <a href="https://www.instagram.com/social_growth.official?igsh=dWZzM2hlbnJneDBk" target="_blank">
+            📷 @social_growth.official (Official)
+        </a>
+
+        <a href="https://www.instagram.com/er_broken_x_ravi?igsh=eTk4cWh0MmRpNWhm" target="_blank">
+            📷 @er_broken_x_ravi (Team)
+        </a>
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="reveal">
+    © 2026 Social Growth App <br><br>
+    📧 hardffm91@gmail.com <br><br>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="contact.html">Contact</a>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+/* THREE DOT MENU */
+function toggleMenu(){
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+document.addEventListener("click", function(e){
+    if(!e.target.closest(".menu-btn") && !e.target.closest(".menu")){
+        document.getElementById("menu").style.display = "none";
+    }
+});
+
+/* SCROLL ANIMATION */
+const reveals = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{threshold:0.15});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html> 

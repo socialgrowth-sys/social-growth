@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Installation Guide – Social Growth App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== BASIC ===== */
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    background:#f6f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* PAGE LOAD */
+.page{
+    animation:fadeIn 0.4s ease;
+}
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(15px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* CONTAINER */
+.container{
+    max-width:720px;
+    margin:auto;
+    padding:18px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    padding:22px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* HEADERS (FIXED FONT SIZE) */
+h1{
+    font-size:22px;
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:18px;
+}
+h2{
+    font-size:17px;
+    margin:0 0 8px 0;
+    color:#111;
+}
+p, li{
+    font-size:14.5px;
+}
+
+/* SECTIONS */
+.section{
+    margin-top:18px;
+    padding:16px;
+    border-radius:12px;
+}
+
+/* COLORS (SOFT & PRO) */
+.note{
+    background:#fff7ed;
+    border-left:5px solid #f97316;
+}
+.step{
+    background:#f0f9ff;
+    border-left:5px solid #0284c7;
+}
+.warning{
+    background:#fff1f2;
+    border-left:5px solid #dc2626;
+}
+.safe{
+    background:#f0fdf4;
+    border-left:5px solid #16a34a;
+}
+.help{
+    background:#faf5ff;
+    border-left:5px solid #7c3aed;
+}
+
+/* LIST */
+ul{
+    padding-left:18px;
+}
+
+/* DIVIDER */
+hr{
+    border:none;
+    height:1px;
+    background:#e5e7eb;
+    margin:22px 0;
+}
+
+/* SCROLL ANIMATION */
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:0.5s ease;
+}
+.reveal.show{
+    opacity:1;
+    transform:none;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    font-size:13px;
+    margin-top:22px;
+    color:#555;
+}
+</style>
+</head>
+
+<body class="page">
+
+<div class="container">
+<div class="card">
+
+<h1 class="reveal">📲 Installation Guide – Social Growth App</h1>
+
+<!-- IMPORTANT NOTE -->
+<div class="section note reveal">
+<h2>⚠️ Important Note (Please Read)</h2>
+<p>
+Social Growth app Google Play Store se nahi,
+<b>direct website</b> se download hoti hai.
+Isliye install ke time Google Play Protect warning aana <b>normal</b> hai.
+</p>
+<p>
+<b>App 100% safe hai</b> aur koi personal data collect nahi karti.
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- STEP 1 -->
+<div class="section step reveal">
+<h2>✅ Step 1: Download APK</h2>
+<p>
+Official website se Social Growth APK download karein.
+Download complete hone dein (file size poori aani chahiye).
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- STEP 2 -->
+<div class="section step reveal">
+<h2>✅ Step 2: Allow Unknown Sources</h2>
+<ul>
+<li>Settings → Security / Privacy</li>
+<li>Install unknown apps</li>
+<li>Browser / File Manager select karein</li>
+<li>Allow from this source <b>ON</b> karein</li>
+</ul>
+</div>
+
+<hr class="reveal">
+
+<!-- STEP 3 -->
+<div class="section step reveal">
+<h2>✅ Step 3: Install APK</h2>
+<ul>
+<li>File Manager → Downloads folder</li>
+<li>SocialGrowth.apk par tap karein</li>
+<li>Install button dabayein</li>
+</ul>
+</div>
+
+<hr class="reveal">
+
+<!-- PLAY PROTECT -->
+<div class="section warning reveal">
+<h2>⚠️ Google Play Protect Warning</h2>
+<p>
+Agar “This app may be harmful” aaye,
+to <b>More details → Install anyway</b> choose karein.
+</p>
+<p>
+Ye warning sirf isliye aati hai kyunki app Play Store par publish nahi hai.
+</p>
+</div>
+
+<hr class="reveal">
+
+<!-- STEP 4 -->
+<div class="section safe reveal">
+<h2>🎉 Step 4: Open App</h2>
+<ul>
+<li>App open karein</li>
+<li>Internet ON rakhein</li>
+<li>App ka use start karein</li>
+</ul>
+</div>
+
+<hr class="reveal">
+
+<!-- SAFETY -->
+<div class="section safe reveal">
+<h2>🔒 Safety & Trust</h2>
+<ul>
+<li>No login required</li>
+<li>No password required</li>
+<li>No personal data collection</li>
+<li>Secure & user-friendly</li>
+</ul>
+</div>
+
+<hr class="reveal">
+
+<!-- HELP -->
+<div class="section help reveal">
+<h2>📩 Need Help?</h2>
+<p>
+Installation ke time problem aaye to email karein:
+<b>hardffm90@gmail.com</b>
+</p>
+</div>
+
+<div class="footer reveal">
+❤️ Thank you for trusting <b>Social Growth</b><br>
+Grow smarter. Grow faster. 🚀
+</div>
+
+</div>
+</div>
+
+<script>
+const items=document.querySelectorAll(".reveal");
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add("show");
+  });
+},{threshold:0.15});
+items.forEach(i=>obs.observe(i));
+</script>
+
+</body>
+</html>
